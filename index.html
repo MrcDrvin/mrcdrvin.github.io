@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> oh eto na coconfess na </title>
+  <link rel="stylesheet" href="tulip.css">
+</head>
+<body>
+  <div id="questionnaire">
+    <div class="question" id="question1">
+      <p> Seseryoshin moba mga tanong ko? (sana, pero no pressure ah HAHAHAHHA)</p>
+      <button onclick="nextQuestion(1, 'Yes')">Yes</button>
+      <button onclick="wrongAnswer(1)">No</button>
+    </div>
+    <div class="question" id="question2">
+      <p> Are you interested in someone right now? </p>
+      <button onclick="nextQuestion(2, 'Yes')">Yes</button>
+      <button onclick="nextQuestion(2, 'Yes')">No</button>
+    </div>
+    <div class="question" id="question3">
+      <p> If a boy were to say that he has a crush on you right now, would you reciprocate his feelings? </p>
+      <button onclick="nextQuestion(3, 'Yes')">Yes</button>
+      <button onclick="nextQuestion(3, 'Yes')">No</button>
+    </div>
+    <div class="question" id="question4">
+      <p> Will you promise me that no matter what your final answer will be, you will answer it truthfully (kahet ireject mo pako okay lang HAHHAHAHA) </p>
+      <button onclick="nextQuestion(4, 'Yes')">Yes</button>
+      <button onclick="nextQuestion(4, 'Yes')">No</button>
+    </div>
+    <div class="question" id="question5">
+      <p> Will you reciprocate my feelings?</p>
+      <button onclick="nextQuestion(5, 'Yes')">Yes</button>
+      <button id="noButton" onmouseover="moveNoButton()">No</button>
+    </div>
+  </div>
+  <div id="result"></div>
+  <script src="tulip.js"></script>
+</body>
+</html>
